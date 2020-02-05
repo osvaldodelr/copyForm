@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>TestVueJS</title>
+  </head>
+  <body>
+    <div id="appVue">
+        <div class="container">
+            <div class="col-md-4">
+                <div class="row card">
+                    <div class="card-header">
+                        <h1>Formulario TestVueJS</h1>
+                    </div>
+                    <div class="card-body">
+                            <div class="list-group d-flex flex-row p-2">
+                                <button class="btn btn-primary m-3 btn-block" @click="copyForm">Copy</button>
+                                <button class="btn btn-primary m-3 btn-block" @click="pasteForm">Paste</button>
+                                <button class="btn btn-primary m-3 btn-block" @click="clearForm">Clear</button>
+                            </div>
+                            <div class="list-group d-flex flex-row p-2">
+                                <input type="text" class="form-control" placeholder="Name" v-model="Name">
+                                <input type="text" class="form-control" placeholder="User" v-model="User">
+                            </div>
+                            <div class="list-group d-flex flex-row p-2">
+                                <input type="text" class="form-control" placeholder="Edad" v-model="Edad">
+                                <input type="text" class="form-control" placeholder="Direccion" v-model="Direccion">
+                            </div>
+                            <div class="list-group d-flex flex-row p-2">
+                                <input type="text" class="form-control" placeholder="Conyuge" v-model="Conyuge" value="testvalue">
+                                <input type="text" class="form-control" placeholder="Hijos" v-model="Hijos">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script src="vueDev.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
